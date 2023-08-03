@@ -1,4 +1,4 @@
-
+{{!-- <div>
 <div>
 <img src="{{this.image_url}}" alt="{{this.name}}">
 </div>
@@ -17,6 +17,7 @@
     </p>
 </div>
 
+
 <div>
     <p>
 {{this.food_pairing}}
@@ -28,18 +29,23 @@
 {{this.brewers_tips}}
     </p>
 </div>
+</div> --}}
 
 
 
-{{!-- 
-<div>
-  <img src="{{this.image_url}}" alt="{{this.name}}">
-  <div >
-    <h4>{{this.name}}</h4>
+<div id="randomContainer">
+  <img id="randomImg" src="{{this.image_url}}" alt="{{this.name}}">
+  <div id="randomTextContainer">
+    <h3>{{this.name}}</h4>
     <p>{{this.description}}</p>
-    <p>{{this.tagline}}</p>
-    <p>{{this.food_pairing}}</p>
-    <p>{{this.brewers_tips}}</p>
+    <p>{{this.tagline}}</p> 
+    
+    <p><strong>Food pairing:</strong></p>
+        <ul>
+        {{#each this.food_pairing}}
+        <li>{{this}}</li>
+        {{/each}}
+        </ul>
+    <p><strong>Brewers tips:</strong> {{this.brewers_tips}}</p>
   </div>
 </div>
- --}}

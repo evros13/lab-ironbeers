@@ -78,3 +78,22 @@ body {
 #beersText {
     
 }
+
+#randomContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#randomImg {
+    height: 290px;
+    width: auto;
+    padding: 50px;
+    margin-left: 50px;
+}
+
+#randomTextContainer {
+    padding: 50px;
+    width: 700px;
+    text-justify: auto;
+
+}
