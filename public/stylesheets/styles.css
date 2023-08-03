@@ -65,18 +65,24 @@ body {
 }
 
 #beersImg {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 70px;
 }
 
 #beersBody {
+    padding: 30px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    width: 33vw;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-#beersText {
-    
+#beersBackground {
+    display: flex;
+    display: inline-block;
+    flex-direction: row;
 }
 
 #randomContainer {
